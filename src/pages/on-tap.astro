@@ -1,0 +1,35 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Beer from '../components/Beer.astro';
+---
+<Layout title="On Tap">
+    <div class="flex flex-col items-stretch gap-16">
+      <Beer
+        name="American Lager"
+        abv={4.6}
+        ibu={11.9}
+        srm={2.7}
+        malt={['Pilsen', 'Corn']}
+        hops={['Tradition']}
+        yeast="Diamond Lager"
+      />
+      <Beer
+        name="Dark Mild"
+        abv={3.0}
+        ibu={15.0}
+        srm={17.6}
+        malt={['Pale Ale', 'Caramel', 'Victory', 'Oats', 'Chocolate']}
+        hops={['East Kent Goldings']}
+        yeast="Windsor"
+      />
+      <Beer
+        name="Extra Special Bitter"
+        abv={5.4}
+        ibu={38.3}
+        srm={11.4}
+        malt={['Pale Ale', 'Caramel', 'Victory']}
+        hops={['East Kent Goldings']}
+        yeast="Nottingham"
+      />
+    </div>
+</Layout>
