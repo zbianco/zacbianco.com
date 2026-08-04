@@ -18,7 +18,9 @@ import us2 from '../assets/us2.webp';
 				<h1 class="text-5xl font-semibold text-center">Zac Bianco</h1>
 				<h3 class="text-2xl font-semibold text-center">Senior Software Developer</h3>
 			</div>
-			<Image alt="A photo of me" src={me} class="rounded-full overflow-hidden size-60 object-scale-down slide-up-in" />
+			<div class="size-60 flex items-stretch justify-stretch relative">
+				<Image alt="A photo of me" id="me" src={me} class="rounded-full overflow-hidden object-scale-down" onload="this.classList.add('slide-up-in')" />
+			</div>
 		</header>
 		<div class="flex flex-col items-center gap-6">
 			<p class="max-w-prose text-lg">
@@ -30,21 +32,21 @@ import us2 from '../assets/us2.webp';
 				Forms, .NET Web APIs, Angular Material, NgRx, jQuery, Knockout, Bootstrap, SQL Server, Oracle, and MySQL.
 			</p>
 			<div class="grid grid-cols-3 grid-rows-2 sm:grid-cols-14 sm:grid-rows-1 gap-px items-stretch justify-stretch">
-				<Image alt="My cat Benton" src={benton} class="sm:col-span-3 size-full object-cover rounded-sm fade-in" />
-				<Image alt="My wife and I in front of the Colosseum in Rome" src={us1} class="col-span-2 sm:col-span-4 size-full object-cover rounded-sm fade-in" />
-				<Image alt="My wife and I at Lumen Field in Seattle for a World Cup match" src={us2} class="col-span-2 sm:col-span-4 sm:order-4 size-full object-cover rounded-sm fade-in" />
-				<Image alt="My cat Sidney" src={sidney} class="sm:col-span-3 size-full object-cover rounded-sm fade-in" />
+				<Image alt="My cat Benton" src={benton} class="sm:col-span-3 size-full object-cover rounded-sm" onload="this.classList.add('fade-in')" />
+				<Image alt="My wife and I in front of the Colosseum in Rome" src={us1} class="col-span-2 sm:col-span-4 size-full object-cover rounded-sm" onload="this.classList.add('fade-in')" />
+				<Image alt="My wife and I at Lumen Field in Seattle for a World Cup match" src={us2} class="col-span-2 sm:col-span-4 sm:order-4 size-full object-cover rounded-sm" onload="this.classList.add('fade-in')" />
+				<Image alt="My cat Sidney" src={sidney} class="sm:col-span-3 size-full object-cover rounded-sm" onload="this.classList.add('fade-in')" />
 			</div>
 			<p class="max-w-prose text-lg">
 				I live in St. Louis with my wife, Megan, and our two cats, Sidney and Benton. I enjoy traveling, suporting our local MLS team,
 				St. Louis CITY SC, and homebrewing.&#32;
 				<a href="/on-tap" class="text-accent hover:text-accent-dark transition-colors underline">See what's on tap right now</a>.
 			</p>
-			<div class="grid grid-cols-3 grid-rows-2 sm:grid-cols-14 sm:grid-rows-1 gap-px items-stretch justify-stretch fade-in">
-				<Image alt="The field at Energizer Park during a St. Louis CITY SC match" src={city} class="col-span-2 sm:col-span-4 size-full object-cover rounded-sm fade-in" />
-				<Image alt="Crater Lake in Oregon" src={travel1} class="sm:col-span-3 size-full object-cover rounded-sm fade-in" />
-				<Image alt="Avalanche Lake in Glacier National Park" src={travel2} class="sm:col-span-3 sm:order-4 size-full object-cover rounded-sm fade-in" />
-				<Image alt="Sedona, Arizona" src={travel3} class="col-span-2 sm:col-span-4 size-full object-cover rounded-sm fade-in" />
+			<div class="grid grid-cols-3 grid-rows-2 sm:grid-cols-14 sm:grid-rows-1 gap-px items-stretch justify-stretch" onload="this.classList.add('fade-in')">
+				<Image alt="The field at Energizer Park during a St. Louis CITY SC match" src={city} class="col-span-2 sm:col-span-4 size-full object-cover rounded-sm" onload="this.classList.add('fade-in')" />
+				<Image alt="Crater Lake in Oregon" src={travel1} class="sm:col-span-3 size-full object-cover rounded-sm"  onload="this.classList.add('fade-in')" />
+				<Image alt="Avalanche Lake in Glacier National Park" src={travel2} class="sm:col-span-3 sm:order-4 size-full object-cover rounded-sm"  onload="this.classList.add('fade-in')" />
+				<Image alt="Sedona, Arizona" src={travel3} class="col-span-2 sm:col-span-4 size-full object-cover rounded-sm"  onload="this.classList.add('fade-in')" />
 			</div>
 		</div>
 	</div>
